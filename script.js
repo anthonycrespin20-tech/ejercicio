@@ -1,13 +1,15 @@
-let boton = document.getElementById("saludar");
+let contador = 0;
 
-boton.addEventListener("click", function () {
-    let nombre = document.getElementById("nombre").value;
+let botonSumar = document.getElementById("sumar");
+let botonReiniciar = document.getElementById("reiniciar");
+let resultado = document.getElementById("contador");
 
-    if (nombre.trim() === "") {
-        document.getElementById("resultado").textContent =
-            "Por favor, escribe tu nombre.";
-    } else {
-        document.getElementById("resultado").textContent =
-            "Hola, " + nombre.trim() + ", bienvenido a la programación.";
-    }
+botonSumar.addEventListener("click", function () {
+    contador++;
+    resultado.textContent = contador;
+});
+
+botonReiniciar.addEventListener("click", function () {
+    contador = 0;
+    resultado.textContent = contador;
 });

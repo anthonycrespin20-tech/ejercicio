@@ -1,34 +1,46 @@
 body {
     font-family: sans-serif;
-    background-color: blue;
+    background: linear-gradient(135deg, #9d0808, #140260);
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .contenedor {
-    width: 80%;
-    max-width: 450px;
-    margin: 70px auto;
-    padding: 25px;
-    background-color: aliceblue;
-    text-align: center;
-    border-radius: 10px;
+    padding-top: 80px;
 }
 
-input {
-    padding: 10px;
-    margin: 15px 0;
-    width: 80%;
+h1,
+p {
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: royalblue;
-    color: white;
+    padding: 12px 20px;
+    margin: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#resultado {
-    font-weight: bold;
-    color: green;
+#sumar {
+    background-color: rgb(248, 245, 249);
+    color: rgb(0, 0, 0);
+}
+
+#reiniciar {
+    background-color: rgb(250, 243, 253);
+    color: rgb(0, 0, 0);
+}
+
+#sumar:hover{
+background-color: rgb(29, 29, 158);
+}
+#reiniciar:hover{
+    background-color: #9d0808;
 }
